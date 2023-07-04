@@ -70,6 +70,14 @@ def main(scrabble_words, frequency_list):
     # The intended answer was the seven, but I guessed the eight, and so check_eight_guess erroneously replaced S with (S)
     # Maybe don't fix this -- maybe this problem is solved by doing the GUI version
 
+    # Another bug:
+    # 1
+    # Board: REI
+    # Rack: ACEEHRS Z6
+    # ? searcher
+    # Correct! (R)ESEARCH
+    # Another solution was RESEARCH Z4
+
 def show_rack_subset(rack, exclude):
     rack = list(rack)
     for letter in exclude:
